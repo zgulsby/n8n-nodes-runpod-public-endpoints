@@ -26,7 +26,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/runpodApi.credentials.js"
+      "dist/credentials/runpodPublicEndpoints.credentials.js"
     ],
     "nodes": [
       "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js"
