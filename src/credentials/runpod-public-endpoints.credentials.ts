@@ -4,9 +4,9 @@ import {
   INodeProperties,
 } from 'n8n-workflow';
 
-class RunpodApi implements ICredentialType {
-  name = 'runpodApi';
-  displayName = 'Runpod API';
+class RunpodPublicEndpointsApi implements ICredentialType {
+  name = 'runpodPublicEndpointsApi';
+  displayName = 'Runpod Public Endpoints API';
   documentationUrl = 'https://docs.runpod.io/hub/public-endpoints';
   properties: INodeProperties[] = [
     {
@@ -30,4 +30,4 @@ class RunpodApi implements ICredentialType {
   };
 }
 
-export { RunpodApi };
+export { RunpodPublicEndpointsApi };

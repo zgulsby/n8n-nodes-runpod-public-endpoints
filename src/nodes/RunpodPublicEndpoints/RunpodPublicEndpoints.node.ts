@@ -18,7 +18,7 @@ export class RunpodPublicEndpoints implements INodeType {
     defaults: { name: 'Runpod' },
     inputs: ['main'],
     outputs: ['main'],
-    credentials: [{ name: 'runpodApi', required: true }],
+    credentials: [{ name: 'runpodPublicEndpointsApi', required: true }],
     properties: runpodProperties,
   };
 
@@ -303,7 +303,7 @@ export class RunpodPublicEndpoints implements INodeType {
     }
 
     // Get the API key from credentials
-    const credentials = await this.getCredentials('runpodApi');
+    const credentials = await this.getCredentials('runpodPublicEndpointsApi');
     if (!credentials?.apiKey) {
       throw new NodeOperationError(this.getNode(), 'Runpod API key is required');
     }
