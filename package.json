@@ -25,7 +25,7 @@
   "homepage": "https://github.com/zgulsby/n8n-nodes-runpod-public-endpoints#readme",
   "n8n": {
     "credentials": [
-      "dist/credentials/RunpodApi.credentials.js"
+      "dist/credentials/runpodApi.credentials.js"
     ],
     "nodes": [
       "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js"
