@@ -2,6 +2,7 @@ import {
   IAuthenticateGeneric,
   ICredentialType,
   INodeProperties,
+  ICredentialTestRequest,
 } from 'n8n-workflow';
 
 class RunpodPublicEndpointsApi implements ICredentialType {
@@ -26,6 +27,14 @@ class RunpodPublicEndpointsApi implements ICredentialType {
         Authorization: '={{ `Bearer ${$credentials.apiKey}` }}',
         'Content-Type': 'application/json',
       },
+    },
+  };
+
+  test: ICredentialTestRequest = {
+    request: {
+      baseURL: 'https://api.runpod.io',
+      url: '/v2/status',
+      method: 'GET',
     },
   };
 }
