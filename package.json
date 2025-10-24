@@ -2,7 +2,7 @@
   "name": "n8n-nodes-runpod-public-endpoints",
   "version": "1.0.2",
   "description": "n8n Community Node: Runpod Public Endpoints (sync/async) with dynamic model discovery",
-  "author": "Runpod Inc.",
+  "author": "Zach Gulsby <zach.gulsby@runpod.io>",
   "license": "Apache-2.0",
   "keywords": [
     "n8n-community-node-package",
@@ -17,12 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/runpod/n8n-nodes-runpod-public-endpoints.git"
+    "url": "git+https://github.com/zgulsby/n8n-nodes-runpod-public-endpoints.git"
   },
   "bugs": {
-    "url": "https://github.com/runpod/n8n-nodes-runpod-public-endpoints/issues"
+    "url": "https://github.com/zgulsby/n8n-nodes-runpod-public-endpoints/issues"
   },
-  "homepage": "https://github.com/runpod/n8n-nodes-runpod-public-endpoints#readme",
+  "homepage": "https://github.com/zgulsby/n8n-nodes-runpod-public-endpoints#readme",
   "n8n": {
     "credentials": [
       "dist/credentials/RunpodApi.credentials.js"
