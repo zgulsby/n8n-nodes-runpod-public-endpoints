@@ -1,0 +1,70 @@
+{
+  "name": "n8n-nodes-runpod-public-endpoints",
+  "version": "1.0.0",
+  "description": "n8n Community Node: Runpod Public Endpoints (sync/async) with dynamic model discovery",
+  "author": "Runpod Inc.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "n8n-community-node-package",
+    "runpod",
+    "ai",
+    "public-endpoints",
+    "text-generation",
+    "image-generation",
+    "video-generation",
+    "audio-processing",
+    "workflow-automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runpod/n8n-nodes-runpod-public-endpoints.git"
+  },
+  "bugs": {
+    "url": "https://github.com/runpod/n8n-nodes-runpod-public-endpoints/issues"
+  },
+  "homepage": "https://github.com/runpod/n8n-nodes-runpod-public-endpoints#readme",
+  "n8n": {
+    "credentials": [
+      "dist/credentials/RunpodApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js"
+    ]
+  },
+  "main": "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js",
+  "types": "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "test/example-workflows"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && cp src/nodes/RunpodPublicEndpoints/runpod-cube.svg dist/nodes/RunpodPublicEndpoints/",
+    "lint": "eslint .",
+    "dev": "n8n dev",
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=1.0.0",
+    "n8n-core": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/runpod"
+  }
+}
