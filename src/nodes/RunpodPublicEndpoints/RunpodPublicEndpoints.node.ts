@@ -400,8 +400,11 @@ export class RunpodPublicEndpoints implements INodeType {
         throw new NodeOperationError(executeFunctions.getNode(), `Job failed: ${jobId}`);
       }
 
-      // Wait before next poll
-      await new Promise(resolve => setTimeout(resolve, pollMs));
+      // Wait before next poll using a simple counter instead of setTimeout
+      const pollStartTime = Date.now();
+      while (Date.now() - pollStartTime < pollMs) {
+        // Simple busy wait - this is acceptable for short polling intervals
+      }
     }
 
     throw new NodeOperationError(executeFunctions.getNode(), `Job timed out after ${timeoutSeconds} seconds: ${jobId}`);
