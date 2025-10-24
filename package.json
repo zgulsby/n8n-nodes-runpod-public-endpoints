@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "n8n Community Node: Runpod Public Endpoints (sync/async) with dynamic model discovery",
   "author": "Zach Gulsby <zach.gulsby@runpod.io>",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "keywords": [
     "n8n-community-node-package",
     "runpod",
