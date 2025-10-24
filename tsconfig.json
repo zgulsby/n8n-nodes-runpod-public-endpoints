@@ -4,14 +4,14 @@
     "module": "commonjs",
     "declaration": true,
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": ".",
     "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["credentials/**/*.ts", "nodes/**/*.ts", "src/helpers/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
 

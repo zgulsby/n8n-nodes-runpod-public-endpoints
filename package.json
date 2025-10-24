@@ -26,14 +26,14 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/runpod-public-endpoints.credentials.js"
+      "./dist/credentials/RunpodPublicEndpoints.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js"
+      "./dist/nodes/RunpodPublicEndpoints.node.js"
     ]
   },
-  "main": "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.js",
-  "types": "dist/nodes/RunpodPublicEndpoints/RunpodPublicEndpoints.node.d.ts",
+  "main": "dist/nodes/RunpodPublicEndpoints.node.js",
+  "types": "dist/nodes/RunpodPublicEndpoints.node.d.ts",
   "files": [
     "dist",
     "README.md",
@@ -41,7 +41,7 @@
     "test/example-workflows"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp src/nodes/RunpodPublicEndpoints/runpod-cube.svg dist/nodes/RunpodPublicEndpoints/",
+    "build": "tsc -p tsconfig.json && cp src/nodes/RunpodPublicEndpoints/runpod-cube.svg dist/nodes/",
     "lint": "eslint .",
     "dev": "n8n dev",
     "prepare": "npm run build",

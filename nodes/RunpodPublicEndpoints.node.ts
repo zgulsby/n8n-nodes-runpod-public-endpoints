@@ -1,7 +1,7 @@
 import type { IExecuteFunctions, INodeExecutionData, INodeType, INodeTypeDescription, IDataObject, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
 import { NodeOperationError } from 'n8n-workflow';
 import { runpodProperties } from './RunpodPublicEndpoints.description';
-import { RunpodResponse } from '../../helpers/RunpodClient';
+import { RunpodResponse } from '../src/helpers/RunpodClient';
 
 export class RunpodPublicEndpoints implements INodeType {
   // Simple in-memory cache for models
