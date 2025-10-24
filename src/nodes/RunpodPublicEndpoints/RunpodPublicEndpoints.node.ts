@@ -10,7 +10,7 @@ export class RunpodPublicEndpoints implements INodeType {
 
   description: INodeTypeDescription = {
     displayName: 'Runpod Public Endpoints',
-    name: 'runpodPublicEndpoints',
+    name: 'runpod-public-endpoints',
     icon: 'file:runpod-cube.svg',
     group: ['transform'],
     version: 1,
