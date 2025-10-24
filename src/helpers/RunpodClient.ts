@@ -1,4 +1,4 @@
-import type { IHttpRequestOptions, IRequestOptions } from 'n8n-workflow';
+import type { IHttpRequestOptions } from 'n8n-workflow';
 import { NodeOperationError } from 'n8n-workflow';
 
 export type RunpodStatus = 'QUEUED' | 'IN_PROGRESS' | 'COMPLETED' | 'FAILED' | string;
